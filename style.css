@@ -106,10 +106,25 @@ section .main .men_text h1 span{
     font-size: 70px;
 }
 
+@keyframes PicAnm {
+    from {
+        transform: translateX(-300px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
 section .main .main_image img{
     width: 700px;
     position: relative;
     left: 70px;
+    animation-name: PicAnm;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
 
 }
 
@@ -825,4 +840,12 @@ footer .end span{
 ::-webkit-scrollbar-thumb{
     background: #fac031;
     border-radius: 15px;
+}
+#pizz{
+    position: relative;
+    top: -5px;
+}
+#btnP{
+    position: relative;
+    top: -5px;
 }
